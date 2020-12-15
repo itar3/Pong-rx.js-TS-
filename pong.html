@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+
+        <p>Welcome to the Pong game <br>
+        To play alone press 1 <br>
+        To play with a firend press 2 (use mouse for contorls)<br>
+        To practice press 3</p>
+        <svg id="canvas" width="600" height="600">
+            <g>
+                
+                <rect id="paddle" height = "100" width = "10" style = "fill:white" x = "50" y = "250"></rect>
+                <rect id="ball" height = "10" width = "10" style = "fill:white" x = "300" y = "300"></rect>
+                <rect id="paddle2" height = "100" width = "10" style = "fill:white" x = "550" y = "250"></rect>
+                <text id = "playerScore" x = "30" y ="50" font-family = "arial" font-size ="40px" fill = "white">0</text>
+                <text id = "compScore" x = "550" y ="50" font-family = "arial" font-size ="40px" fill = "white">0</text>
+                <text id = "gameOver" x = "150" y ="300" font-family = "arial" font-size ="60px" fill = "red"></text>
+                <line x1=300 x2=300 y1=0 y2=600 stroke="white"/>
+
+            </g>
+        </svg>
+        
+    </body>
+</html
